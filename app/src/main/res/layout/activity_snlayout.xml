@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="sanocare.com.talk.SNLayoutActivity">
+
+    <sanocare.com.talk.customView.CommonTitleBar
+        android:id="@+id/about_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        app:leftDrawable="@mipmap/ic_back"
+        app:topTitleSmall="hhhh"
+        app:rightBtnText="布局嵌套"
+        app:topTitle="布局介绍页面"/>
+
+    <Button
+        android:id="@+id/btn_linearlayout"
+        style="@style/sn_demo_style"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="LinearLayout"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_relativelayout"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="RelativeLayout"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_framelayout"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="FrameLayout"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_tablelayout"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="TableLayout"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_absolutelayout"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="AbsoluteLayout"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_gridLayout"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="GridLayout"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp"/>
+
+</LinearLayout>

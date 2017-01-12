@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="sanocare.com.talk.MainActivity">
+    <sanocare.com.talk.customView.CommonTitleBar
+        android:id="@+id/about_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        app:topTitle="主界面" />
+
+    <Button
+        android:id="@+id/btn_layout"
+        android:layout_marginTop="30dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="布局介绍"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_adaptation"
+        android:layout_marginTop="30dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="适配介绍"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_custom_view"
+        android:layout_marginTop="30dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="自定义布局介绍"
+        android:gravity="center"/>
+
+</LinearLayout>

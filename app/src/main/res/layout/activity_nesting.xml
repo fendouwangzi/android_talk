@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="sanocare.com.talk.NestingActivity">
+
+    <sanocare.com.talk.customView.CommonTitleBar
+        android:id="@+id/about_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        app:leftDrawable="@mipmap/ic_back"
+        app:topTitle="嵌套布局和布局引用介绍页面" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="frameLayout 布局"/>
+            <include layout="@layout/activity_frame_layout"
+                     android:layout_width="match_parent"
+                     android:layout_height="500dp">
+            </include>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="relativeLayout 布局"/>
+            <include layout="@layout/activity_relative_layout"
+                     android:layout_width="match_parent"
+                     android:layout_height="500dp">
+            </include>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
